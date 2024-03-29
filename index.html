@@ -1,16 +1,47 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Crypto Watcher</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crypto Watcher</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="root">
+    
+  </div>
+  <footer>
+    <h4>project by W</h4>
+    <p>Consulte informações sobre criptomoedas de forma rápida e simples</p>
+    <div class="links">
+      <a href="https://www.instagram.com/abreu.jay/"><img src="/public/instagram.png" alt="Instagram" /></a>
+      <a href="https://github.com/abreujay"><img src="/public/github.png" alt="GitHub" /></a>
+      <a href="https://www.linkedin.com/in/jonathan-abreu-666715223/"><img src="/public/linkedin-logo.png" alt="Linkedin" /></a>
+    </div>
+  </footer>
+  <script src="./src/js/three.r134.min.js"></script>
+  <script src="./src/js/vanta.net.min.js"></script>
+  <script>
+    window.onload = function() {
+      VANTA.NET({
+        el: "#Main",
+        mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 900.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0x914afa,
+  backgroundColor: 0x6757c5
+
+      });
+    };
+    </script>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
 </html>

@@ -1,3 +1,11 @@
+html,
+body {
+
+    background: linear-gradient(to bottom, #7b76db, #9B51E0 );
+    max-height: 100vh;
+
+}
+
 .result {
 
     display: flex;
@@ -5,7 +13,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-top: 200px;
+    padding-top: 15px;
 
 }
 
@@ -16,23 +24,36 @@
     height: 600px;
     padding: 2rem 3rem;
     background-color: #5E5AA9;
+    padding-top: 50px;
 
 }
 
 .coin-info img{
 
    width: 50px;
+   border: 2px solid #fff;
+   border-radius: 2rem;
 
 }
 
 .green{
 
     fill: green;
+    margin-bottom: 100px;
         
 }
 
 .red {
 
     fill: red;
+    margin-bottom: 100px;
+
+}
+
+.img2 img{
+
+    width: 100px;
+    height: auto;
+    margin: 0 auto;
 
 }

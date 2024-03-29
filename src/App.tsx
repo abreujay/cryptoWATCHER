@@ -13,18 +13,18 @@ function App() {
   
 
   return (
-    <div className="App">
+    <div className="App" id='App'>
       <header>
         <img src={mainIcon} alt="" />
         <h4>Crypto WATCHER</h4>
       </header>
-      <main>
+      <main id='Main'>
         <div className="Home">
           <Home/>
         </div>
       </main>
       <footer>
-        <h4>project by W</h4>
+        <h4>projected by W</h4>
         <p>Consulte informações sobre criptomoedas de forma rápida e simples</p>
         <div className="links">
           <a href="https://www.instagram.com/abreu.jay/"><img src={instagram} alt="Instagram" /></a>
