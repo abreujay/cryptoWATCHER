@@ -5,7 +5,12 @@ import "./SearchResult.css"
 import { FaArrowUp, FaArrowDown  } from 'react-icons/fa';
 
 const SearchResult = () => {
-    const [searchResult, setSearchResult] = useState(null);
+    const [searchResult, setSearchResult] = useState({
+        image: { large: '' },
+        name: '',
+        symbol: '',
+        market_data: { current_price: { usd: 0 }, price_change_percentage_24h_in_currency: { usd: 0 } }
+    });
     const location = useLocation();
     const query = new URLSearchParams(location.search).get('query');
 
@@ -26,15 +31,15 @@ const SearchResult = () => {
 
     return (
         <div>
-            {searchResult ? (
+            {searchResult && Object.keys(searchResult).length !== 0 ? (
                 <div className='result'>
                     <div className="coin-info">
-                        <img src={searchResult.image.large} alt="searchResult.name"/>
+                        <img src={searchResult.image.large} alt={searchResult.name}/>
                         <h2>{searchResult.name}</h2>
                         <p>Abreviação: {searchResult.symbol}</p>
                         <p>Preço em USD: ${searchResult.market_data.current_price.usd.toFixed(2)}</p>
-                        <p>Variação nas últimas 24h: ${searchResult.market_data.price_change_percentage_24h_in_currency.usd.toFixed(2)}%</p>
-                        {parseFloat(searchResult.market_data.price_change_percentage_24h_in_currency.usd) > 0 ? (
+                        <p>Variação nas últimas 24h: ${(searchResult.market_data.price_change_percentage_24h_in_currency.usd).toFixed(2)}%</p>
+                        {searchResult.market_data.price_change_percentage_24h_in_currency.usd > 0 ? (
                             <FaArrowUp className="arrow-icon green" />
                         ) : (
                             <FaArrowDown className="arrow-icon red" />
