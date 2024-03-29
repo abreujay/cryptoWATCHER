@@ -1,0 +1,92 @@
+header {
+
+  width: 100%;
+  height: 50px;
+  background-color: #5E5AA9;
+  position: relative;
+  border: 1px solid #474747cc;
+
+}
+
+header img {
+
+  width: 50px;
+  position: absolute;
+  top: 2px;
+  left: 5px;
+
+}
+
+header h4 {
+
+  padding: 1rem 4rem;
+
+}
+
+header p {
+
+  padding-bottom: 65rem;
+
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  background-color: #423e8f;
+  position: fixed;
+  bottom: 0;
+  padding: 1rem;
+  left: 0;
+  border: 1px solid #474747cc;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 1rem; 
+  right: 2.5rem; 
+}
+
+.links a {
+  margin-right: 0.5rem; 
+}
+
+.links a:last-child {
+  margin-right: 0; 
+}
+
+.links a img {
+  width: 30px;
+  height: auto; 
+}
+
+@media screen and (max-width: 425px) {
+  
+  footer p {
+
+    position: absolute;
+    left: 2px;
+    bottom: 3px;
+    opacity: 0;
+
+  }
+ 
+  .links {
+    position: absolute;
+    right: 3rem;
+    bottom: 1px;
+    
+    
+  }
+
+  .links a {
+    
+  }
+}
+
+@media screen and (max-width: 375px) {
+  header {
+    width: 100%;
+  }
+}

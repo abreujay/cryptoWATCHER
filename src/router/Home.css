@@ -1,0 +1,78 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 500px;
+    margin: 0 auto;
+    padding-top: 200px;
+}
+
+.form-input {
+
+    border: 1px solid #ccc;
+    padding: 1rem 2rem;
+    background-color: #5E5AA9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+    border-radius: 1rem;
+    gap: 5px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form-input h2{
+
+    
+    padding: 2rem;
+    border-left: 1px solid #070707;
+    border-bottom: 1px solid #070707;
+    
+  
+  }
+
+.form-input input{
+
+  width:150px;
+  height: 20px;  
+  color: #5E5AA9;
+  font-style: italic;
+  font-weight: bold;
+  padding-right: 10px;
+  padding: 0.5;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease;
+
+}
+
+.form-input input:focus {
+    outline: none; 
+    border-color: #5a79ce;
+}
+
+.form-input button{
+
+    background-color: #E6E6FA;
+    width: 230px;
+    height: 25px; 
+    padding: .2rem;
+    cursor: pointer;
+    transition: 300ms;
+
+}
+
+
+.form-input button .searchIcon path {
+    fill: #070707; 
+}
+
+.form-input button:hover{
+
+    background-color: #5E5AA9;
+
+}

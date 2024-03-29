@@ -1,0 +1,17 @@
+* {
+
+  margin: 0;
+  padding: 0;
+  font-family: Nunito Sans;
+  color: #F5F5F5;
+
+}
+
+html,
+body {
+
+  height: 100vh;
+  background: linear-gradient(to bottom, #7b76db, #9B51E0 );
+  
+
+}

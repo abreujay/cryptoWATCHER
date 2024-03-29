@@ -1,0 +1,38 @@
+.result {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 200px;
+
+}
+
+.coin-info {
+
+    border: 1px solid #ccc;
+    width: 600px;
+    height: 600px;
+    padding: 2rem 3rem;
+    background-color: #5E5AA9;
+
+}
+
+.coin-info img{
+
+   width: 50px;
+
+}
+
+.green{
+
+    fill: green;
+        
+}
+
+.red {
+
+    fill: red;
+
+}
