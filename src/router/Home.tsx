@@ -17,11 +17,10 @@ const Home = () => {
   };
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault(); // Impede o envio do formulário padrão
-    if (searchTerm.trim()) { // Verifica se o campo não está vazio
+    e.preventDefault();
+    if (searchTerm.trim()) {
       handleSearch();
     } else {
-      // Adicione aqui sua lógica para lidar com a entrada vazia, por exemplo, exibir uma mensagem de erro
       alert('Por favor, insira uma criptomoeda.');
     }
   };
