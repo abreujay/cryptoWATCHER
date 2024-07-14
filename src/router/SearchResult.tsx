@@ -12,7 +12,7 @@ const SearchResult = () => {
         symbol: '',
         market_data: { current_price: { usd: 0 }, price_change_percentage_24h_in_currency: { usd: 0 } }
     });
-    const [error, setError] = useState<string | null>(null); // Ajuste do tipo de estado para string | null
+    const [error, setError] = useState<string | null>(null); 
     const location = useLocation();
     const query = new URLSearchParams(location.search).get('query');
 
@@ -21,10 +21,10 @@ const SearchResult = () => {
             try {
                 const response = await axios.get(`https://api.coingecko.com/api/v3/coins/${query}`);
                 setSearchResult(response.data);
-                setError(null); // Limpar o estado de erro se a busca for bem-sucedida
+                setError(null); 
             } catch (error) {
                 console.log("ocorreu um erro...", error);
-                setError("Ocorreu um erro ao buscar os dados. Por favor, tente novamente mais tarde."); // Define a mensagem de erro
+                setError("Ocorreu um erro ao buscar os dados. Por favor, tente novamente mais tarde."); 
             }
         };
 
@@ -35,7 +35,7 @@ const SearchResult = () => {
 
     return (
         <div>
-            {error ? ( // Renderizar a mensagem de erro se houver um erro
+            {error ? (
                 <div className="error-message">{error}</div>
             ) : (
                 searchResult && Object.keys(searchResult).length !== 0 ? (
